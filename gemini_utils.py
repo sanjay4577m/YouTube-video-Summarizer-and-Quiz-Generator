@@ -2,10 +2,9 @@ import streamlit as st
 
 from google import genai
 import json
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+
+
 client = genai.Client(
     api_key= st.secrets["A"]
 )
