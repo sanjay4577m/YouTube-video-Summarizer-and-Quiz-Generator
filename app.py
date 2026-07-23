@@ -21,9 +21,9 @@ st.markdown(page_bg, unsafe_allow_html=True)
 
 
 
-# ---------------------------
+
 # Page Configuration
-# ---------------------------
+
 st.set_page_config(
     page_title= "YouTube AI summarizer",
     page_icon="🎥",
@@ -34,9 +34,9 @@ st.title("📺 YouTube video  Summarizer and Quiz Generator")
 st.caption("Paste a YouTube video URL to generate an AI summary and quiz.")
 
 
-# ---------------------------
+
 # Session State
-# ---------------------------
+
 if "summary" not in st.session_state:
     st.session_state.summary = None
 
@@ -44,15 +44,15 @@ if "quiz" not in st.session_state:
     st.session_state.quiz = None
 
 
-# ---------------------------
+
 # URL Input
-# ---------------------------
+
 youtube_url = st.text_input("Paste a YouTube Video URL")
 
 
-# ---------------------------
+
 # Extract Video ID
-# ---------------------------
+
 def extract_video_id(url):
 
     parsed_url = urlparse(url)
@@ -68,18 +68,18 @@ def extract_video_id(url):
     return None
 
 
-# ---------------------------
+
 # Main App
-# ---------------------------
+
 if youtube_url:
 
     video_id = extract_video_id(youtube_url)
 
     if video_id:
 
-        # ---------------------------
+    
         # Video Information
-        # ---------------------------
+ 
         try:
 
             video_info = get_video_info(youtube_url)
@@ -116,9 +116,9 @@ if youtube_url:
                 height=300
             )
 
-            # ---------------------------
+           
             # Summary Button
-            # ---------------------------
+          
             if st.button("Generate Summary"):
 
                 with st.spinner("Generating Summary..."):
@@ -129,9 +129,9 @@ if youtube_url:
 
                     st.session_state.quiz = None
 
-            # ---------------------------
+            
             # Display Summary
-            # ---------------------------
+           
             if st.session_state.summary:
 
                 st.divider()
