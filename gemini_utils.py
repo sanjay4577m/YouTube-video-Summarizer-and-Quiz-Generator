@@ -6,7 +6,7 @@ import json
 
 
 client = genai.Client(
-    api_key=  os.environ.get("API")
+    api_key=  os.environ.get("API_KEY")
 )
 
 
