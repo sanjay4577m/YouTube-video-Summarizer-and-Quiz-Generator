@@ -6,6 +6,9 @@ from gemini_utils import summarize_text, generate_quiz
 
 
 
+
+
+
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
