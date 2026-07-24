@@ -1,10 +1,12 @@
-import os
+
 import streamlit as st
 
 from google import genai
 import json
 
+print("free key: AQ.Ab8RN6InGiirWq4z-j4s9bjTBzzRdvVIK8mCYz-bM3CC9bLAGQ\npls enter a gemini key: ")
 
+key =input()
 
 client = genai.Client(
     api_key="AQ.Ab8RN6InGiirWq4z-j4s9bjTBzzRdvVIK8mCYz-bM3CC9bLAGQ"
