@@ -1,12 +1,9 @@
-
+from app import key
 import streamlit as st
 
 from google import genai
 import json
 
-print("enter a gemini key: ")
-
-key =input()
 
 client = genai.Client(
     api_key=key
