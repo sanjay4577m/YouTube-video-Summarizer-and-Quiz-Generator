@@ -6,8 +6,8 @@ import json
 
 
 client = genai.Client(
-    api_key= "AQ.Ab8RN6InGiirWq4z-j4s9bjTBzzRdvVIK8mCYz-bM3CC9bLAGQ"
-    )
+    api_key= st.secrets["A"]
+)
 
 
 def summarize_text(text):
