@@ -1,13 +1,11 @@
 
-
-Install python packages for the project.
-
-1. pip install streamlit
-2. pip install gemini-generativeai
-3. pip install python.env
-4. pip install youtube-transcript-api
-
-
+google
+urllib
+streamlit
+gemini-generativeai
+youtube-transcript-api
+json
+yt_dlp
 
 
 
