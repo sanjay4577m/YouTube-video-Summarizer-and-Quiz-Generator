@@ -6,14 +6,16 @@ import json
 
 print("free key: AQ.Ab8RN6J6cE2ijoOBAoV0A974CwYE-68R6N8yIZpJ1Eenz27iNQ\n")
 
-
 key = st.text_input(
     "Enter your Gemini API Key",
     type="password"
 )
 
-if key:
-    client = genai.Client(api_key=key)
+if not key:
+    st.info("Please enter your Gemini API key.")
+    st.stop()
+
+client = genai.Client(api_key=key)
 
 def summarize_text(text):
     prompt = f"""
