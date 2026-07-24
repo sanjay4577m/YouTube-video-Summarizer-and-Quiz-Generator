@@ -5,9 +5,10 @@ from google import genai
 import json
 
 
-key =  os.environ.get("API_KEY")
+
 client = genai.Client(
-    api_key= key
+    api_key=AQ.Ab8RN6InGiirWq4z-j4s9bjTBzzRdvVIK8mCYz-bM3CC9bLAGQ
+)
 )
 
 
