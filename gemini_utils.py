@@ -4,15 +4,16 @@ import streamlit as st
 from google import genai
 import json
 
-print("pls enter your gemini key.\nfree key: AQ.Ab8RN6J6cE2ijoOBAoV0A974CwYE-68R6N8yIZpJ1Eenz27iNQ\n")
-key = input("enter here: ")
+print("free key: AQ.Ab8RN6J6cE2ijoOBAoV0A974CwYE-68R6N8yIZpJ1Eenz27iNQ\n")
 
-client = genai.Client(
-    api_key=key
 
+key = st.text_input(
+    "Enter your Gemini API Key",
+    type="password"
 )
 
-
+if key:
+    client = genai.Client(api_key=key)
 
 def summarize_text(text):
     prompt = f"""
