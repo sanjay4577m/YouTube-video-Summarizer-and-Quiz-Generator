@@ -6,7 +6,7 @@ import json
 
 
 client = genai.Client(
-    api_key= st.secrets["API_KEY"]
+    api_key= "API_KEY"
 )
 
 
