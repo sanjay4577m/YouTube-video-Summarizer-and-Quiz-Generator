@@ -1,6 +1,6 @@
 ## How to Use
 
-### Option 1: Run Locally
+### Option 1: Run Locally (Recommended)
 
 1. Clone the repository:
 
