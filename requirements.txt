@@ -1,10 +1,10 @@
 
 google
-urllib
+
 streamlit
 gemini-generativeai
 youtube-transcript-api
-json
+
 yt_dlp
 
 
