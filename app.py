@@ -4,6 +4,9 @@ from video_info import get_video_info
 from utils import get_transcript
 from gemini_utils import summarize_text, generate_quiz
 
+print("pls enter your gemini key.\nfree key: AQ.Ab8RN6J6cE2ijoOBAoV0A974CwYE-68R6N8yIZpJ1Eenz27iNQ\n")
+key = input("enter here: ")
+
 
 
 page_bg = """
